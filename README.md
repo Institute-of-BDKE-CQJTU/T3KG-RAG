@@ -13,9 +13,9 @@ Download link for the encoder in ‘Multi-level Semantic Enhanced Evidence Hybri
 
 Download links for the Llama 3.1-8B large language model:[Llama 3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct).
 
-Please place the MultHiertt dataset in the following directory: T3KGRAG/dataset/MultiHiertt;
+Please place the MultHiertt dataset in the following directory: T3GRAG/dataset/MultiHiertt;
 
-Please place the DocRAGLib dataset in the following directory: T3KGRAG/dataset/DocRAGLib.
+Please place the DocRAGLib dataset in the following directory: T3GRAG/dataset/DocRAGLib.
 
 
 
