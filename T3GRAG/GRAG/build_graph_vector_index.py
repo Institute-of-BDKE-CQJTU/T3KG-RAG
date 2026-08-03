@@ -1,8 +1,6 @@
 """
-Graph RAG 向量构建脚本
-- 属性拼接
-- 批量向量化
-- 导出向量到本地文件 / FAISS（用于快速检索）
+Graph RAG Vector construction
+
 """
 
 from __future__ import annotations
@@ -39,12 +37,12 @@ OUTPUT_ROOT = Path(__file__).resolve().parent / "output_vector"
 
 
 def format_cell_text(record: Dict[str, Any]) -> str:
-    # Cell 向量文本优先且主要使用 TableDescription.description
+    
     table_description = (record.get("table_description") or "").strip()
     if table_description:
         return table_description
 
-    # 若存在脏数据或未建立描述关系，保留原始回退逻辑，避免出现空文本
+    
     table_id = record.get("table_id")
     row_path_str = record.get("row_path_str")
     col_path_str = record.get("col_path_str")
