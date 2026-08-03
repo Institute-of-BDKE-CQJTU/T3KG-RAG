@@ -341,7 +341,7 @@ class HybridGraphRetriever:
         return f"{doc_id}::table::{table_id}::row::{row}::col::{col}"
 
     def retrieve(self, question: str, target_doc_id: str, top_k: int = 50) -> Dict[str, List[str]]:
-        _ = top_k  # 保留参数兼容旧调用，当前采用配额式召回
+        _ = top_k  
         kp = 20
         kc = 40
 
