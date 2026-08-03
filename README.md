@@ -1,13 +1,10 @@
 # T3KG-RAG
 
 
-# 0. Abstract
+# 1. Abstract
 
 Large language models (LLMs) have achieved remarkable progress in various natural language understanding and generation tasks. However, question answering (QA) over text-table hybrid contexts remains a challenging task. Existing open-source LLMs and retrieval-augmented generation (RAG) methods still have shortcomings in hybrid context understanding, efficient evidence retrieval and complex reasoning. How to construct a unified representation model for heterogeneous text-table information and achieve efficient hybrid retrieval based on this representation model remains an unsolved issue. In this paper, we propose T3KG-RAG, a novel text-table QA method via RAG over hybrid context knowledge graph (KG). First, our method automatically constructs KG from text-table hybrid contexts, achieving unified representation of heterogeneous data. Next, we propose a multi-level semantic enhanced hybrid retrieval method which enables efficient evidence perception over the hybrid context KG. Finally, we incorporate the hybrid evidence into prompts, and invoke LLM to generate the answer. Experimental results on two public datasets MultiHiertt and DocRAGLib demonstrate that our approach outperforms state-of-the-art baseline models and achieves better computational efficiency.
 
-# 1. Methodology
-![image](https://github.com/Institute-of-BDKE-CQJTU/T3KG-RAG/blob/main/Fig1.pdf)
-Fig. 1. The overall architecture of the proposed T3KG-RAG framework, which consists of three modules: (1) automated KG construction from text-table hybrid contexts, (2) multi-level semantic enhanced evidence hybrid retrieval, and (3) hybrid evidence enhanced answer generation via LLM.
 # 2. Dataset and Model Downloads
 
 Download links for the MultiHiertt dataset and the DocRAGLib dataset:[MultiHiertt](https://github.com/psunlpgroup/MultiHiertt) and [DocRAGLib](https://github.com/ChiZhang-bit/Mixture-of-RAG).
